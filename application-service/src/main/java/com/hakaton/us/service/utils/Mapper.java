@@ -9,12 +9,12 @@ import org.springframework.stereotype.Component;
 public class Mapper {
     public static Application mapToApplication(ApplicationDto applicationDto){
         return new Application(applicationDto.getId(), applicationDto.getStartDate(),
-                applicationDto.getEndDate(), applicationDto.getVehicle());
+                applicationDto.getEndDate(), applicationDto.getVehicle(), applicationDto.getUserName(), applicationDto.getUserSurname());
     }
 
     public static ApplicationDto mapToApplicationDto(Application application){
         return new ApplicationDto(application.getId(), application.getStartDate(),
-                application.getEndDate(), application.getVehicle());
+                application.getEndDate(), application.getVehicle(), application.getUserName(), application.getUserSurname());
     }
 
 }

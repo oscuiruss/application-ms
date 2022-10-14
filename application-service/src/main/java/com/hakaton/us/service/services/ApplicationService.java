@@ -11,4 +11,6 @@ public interface ApplicationService {
     void updateApplication(ApplicationDto applicationDto);
 
     ApplicationDto findApplication(Long id);
+
+    ApplicationDto createOrUpdate(ApplicationDto applicationDto);
 }

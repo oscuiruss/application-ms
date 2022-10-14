@@ -26,4 +26,9 @@ public class Application {
     @Column(name = "vehicle")
     private String vehicle;
 
+    @Column(name="user_name")
+    private String userName;
+
+    @Column(name="user_surname")
+    private String userSurname;
 }

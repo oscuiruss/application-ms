@@ -6,6 +6,7 @@
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="Hibernate" />
         <datasource-mapping>
+          <factory-entry name="application-repo" />
           <factory-entry name="repo" />
           <factory-entry name="us-repo" />
         </datasource-mapping>
@@ -17,11 +18,11 @@
     </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_15">
-    <output url="file://$MODULE_DIR$/../application-repo/target/classes" />
-    <output-test url="file://$MODULE_DIR$/../application-repo/target/test-classes" />
-    <content url="file://$MODULE_DIR$/../application-repo">
-      <sourceFolder url="file://$MODULE_DIR$/../application-repo/src/main/java" isTestSource="false" />
-      <excludeFolder url="file://$MODULE_DIR$/../application-repo/target" />
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

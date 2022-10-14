@@ -38,14 +38,17 @@ public class ApplicationServiceImpl implements ApplicationService {
 
     @Override
     @Transactional
-    public void updateApplication(ApplicationDto applicationOld) {
-        Optional<Application> applicationOpt = applicationRepository.findById(applicationOld.getId());
-        if (applicationOpt.isPresent()){
-            Application application = applicationOpt.get();
-            application.setId(applicationOld.getId());
-            application.setStartDate(applicationOld.getStartDate());
-            application.setEndDate(applicationOld.getEndDate());
-            application.setVehicle(applicationOld.getVehicle());
+    public void updateApplication(ApplicationDto applicationNew) {
+        Optional<Application> applicationOldOpt = applicationRepository.findById(applicationNew.getId());
+        if (applicationOldOpt.isPresent()) {
+            Application application = applicationOldOpt.get();
+            application.setId(applicationNew.getId());
+            application.setStartDate(applicationNew.getStartDate());
+            application.setEndDate(applicationNew.getEndDate());
+            application.setVehicle(applicationNew.getVehicle());
+            application.setUserName(applicationNew.getUserName());
+            application.setUserSurname(applicationNew.getUserSurname());
+            applicationRepository.save(application);
         }
     }
 
@@ -53,5 +56,14 @@ public class ApplicationServiceImpl implements ApplicationService {
     public ApplicationDto findApplication(Long id) {
         Optional<Application> applicationOpt = applicationRepository.findById(id);
         return applicationOpt.map(Mapper::mapToApplicationDto).orElse(null);
+    }
+
+    @Override
+    public ApplicationDto createOrUpdate(ApplicationDto applicationDto) {
+        if (applicationDto.getId() == null) {
+            return createApplication(applicationDto);
+        }
+        updateApplication(applicationDto);
+        return applicationDto;
     }
 }

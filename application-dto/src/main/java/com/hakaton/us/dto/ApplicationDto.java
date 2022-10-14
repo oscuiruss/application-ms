@@ -10,11 +10,15 @@ import java.util.Calendar;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ApplicationDto {
-    private long id;
+    private Long id;
 
     private Calendar startDate;
 
     private Calendar endDate;
 
     private String vehicle;
+
+    private String userName;
+
+    private String userSurname;
 }
