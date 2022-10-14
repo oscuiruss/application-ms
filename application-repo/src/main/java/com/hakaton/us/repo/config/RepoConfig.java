@@ -1,0 +1,12 @@
+package com.hakaton.us.repo.config;
+
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+
+@Configuration
+@EntityScan(basePackages = {"com.hakaton.us.repo.entity"})
+@EnableJpaRepositories(basePackages = {"com.hakaton.us.repo.repository"})
+public class RepoConfig {
+}
+

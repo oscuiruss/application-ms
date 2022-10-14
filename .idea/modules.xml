@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/application-app/application-app.iml" filepath="$PROJECT_DIR$/application-app/application-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/application-dto/application-dto.iml" filepath="$PROJECT_DIR$/application-dto/application-dto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/application-repo/application-repo.iml" filepath="$PROJECT_DIR$/application-repo/application-repo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/application-service/application-service.iml" filepath="$PROJECT_DIR$/application-service/application-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/application-web/application-web.iml" filepath="$PROJECT_DIR$/application-web/application-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/stepanova-news1.iml" filepath="$PROJECT_DIR$/.idea/stepanova-news1.iml" />
+    </modules>
+  </component>
+</project>
