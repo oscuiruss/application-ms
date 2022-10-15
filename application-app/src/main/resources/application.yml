@@ -1,10 +1,10 @@
 spring:
   application:
-    name: user-service
+    name: application-ms
   datasource:
-    url: jdbc:postgresql://127.0.0.1:5419/stepanova-news
+    url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
-    password: postgres
+    password: 312710
   jpa:
     properties:
       hibernate:
@@ -27,7 +27,7 @@ springdoc:
 
 eureka:
   instance:
-    appname: user-service
+    appname: application-ms
     leaseRenewalIntervalInSeconds: 5
     lease-expiration-duration-in-seconds: 5
   client:

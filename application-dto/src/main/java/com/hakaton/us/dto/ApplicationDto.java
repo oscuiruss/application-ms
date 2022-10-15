@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.Calendar;
+import java.util.Date;
 
 @Data
 @NoArgsConstructor
@@ -12,13 +13,14 @@ import java.util.Calendar;
 public class ApplicationDto {
     private Long id;
 
-    private Calendar startDate;
+    private Date startDate;
 
-    private Calendar endDate;
+    private Date endDate;
 
     private String vehicle;
 
     private String userName;
 
     private String userSurname;
+
 }

@@ -6,22 +6,23 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.Calendar;
+import java.util.Date;
 
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "news")
+@Table(name = "applications")
 public class Application {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     @Column(name = "start_date")
-    private Calendar startDate;
+    private Date startDate;
 
     @Column(name = "end_date")
-    private Calendar endDate;
+    private Date endDate;
 
     @Column(name = "vehicle")
     private String vehicle;

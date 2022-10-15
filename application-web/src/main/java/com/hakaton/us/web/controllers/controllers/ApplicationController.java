@@ -26,4 +26,5 @@ public class ApplicationController {
         ApplicationDto response = applicationService.findApplication(id);
         return ResponseEntity.ok(response);
     }
+
 }

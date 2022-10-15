@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Import;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
-@ComponentScan(basePackages = {"com.hakaton.us.web.controllers.controllers"})
+@ComponentScan(basePackages = {"com.hakaton.us.web.controllers"})
 @Import({ServiceConfig.class, SwaggerConfig.class})
 public class WebConfig implements WebMvcConfigurer {
 }
